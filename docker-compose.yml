@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: anurag-portfolio
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    networks:
+      - portfolio-network
+    environment:
+      - NGINX_HOST=localhost
+      - NGINX_PORT=80
+    labels:
+      - "com.portfolio.description=Anurag Dangi - Senior DevOps Engineer Portfolio"
+      - "com.portfolio.author=Anurag Dangi"
+      - "com.portfolio.version=2.0"
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+
+networks:
+  portfolio-network:
+    driver: bridge
+
