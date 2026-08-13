@@ -11,13 +11,14 @@ RUN rm -rf ./*
 COPY index.html .
 COPY styles.css .
 COPY script.js .
+COPY images/ ./images/
 
 # Copy custom nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Add labels for metadata
 LABEL maintainer="Anurag Dangi <anurag.dangi2025@gmail.com>"
-LABEL description="Senior DevOps Engineer Portfolio - IIT Patna Graduate"
+LABEL description="Senior DevOps / SRE / Kubernetes Platform Engineer Portfolio"
 LABEL version="2.0"
 
 # Expose port 80

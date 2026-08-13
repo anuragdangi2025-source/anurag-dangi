@@ -3,672 +3,622 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Anurag Dangi - Senior DevOps Engineer Portfolio">
-    <title>Anurag Dangi | DevOps Engineer</title>
+    <meta name="description" content="Anurag Dangi — Senior DevOps Engineer, SRE, and Cloud & Kubernetes Platform Engineer in Pune. Multi-cloud Kubernetes, observability, and production reliability.">
+    <meta name="author" content="Anurag Dangi">
+    <title>Anurag Dangi | Senior DevOps Engineer · SRE · Kubernetes Platform</title>
+    <meta property="og:title" content="Anurag Dangi — Senior DevOps / SRE / Kubernetes Platform Engineer">
+    <meta property="og:description" content="Production Kubernetes platforms across AWS, Azure, and GCP. Reliability, GitOps, and observability at scale.">
+    <meta property="og:image" content="images/anurag-dangi.jpg">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <!-- Theme Toggle -->
-    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
-        <i class="fas fa-moon"></i>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+        <i class="fas fa-moon" aria-hidden="true"></i>
     </button>
 
-    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="nav-brand">
-                <h2>Anurag Dangi</h2>
+                <a href="#home" class="nav-logo">Anurag Dangi</a>
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#achievements" class="nav-link">Achievements</a></li>
-                <li><a href="#infrastructure" class="nav-link">Infrastructure</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#platform" class="nav-link">Platform</a></li>
+                <li><a href="#reliability" class="nav-link">Reliability</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#certifications" class="nav-link">Certifications</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
+            <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div id="particles-js"></div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <div class="hero-badge">
-                    <i class="fas fa-certificate"></i>
-                    <span>IIT Patna Graduate</span>
+    <main id="main">
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-badge">
+                        <i class="fas fa-location-dot" aria-hidden="true"></i>
+                        <span>Pune, India · 5+ years production experience</span>
+                    </p>
+                    <h1 class="hero-title">Anurag Dangi</h1>
+                    <h2 class="hero-subtitle">Senior DevOps Engineer | SRE | Cloud &amp; Kubernetes Platform Engineer</h2>
+                    <p class="hero-statement">Building reliable, scalable and observable cloud-native platforms.</p>
+                    <p class="hero-description">
+                        I design and operate production Kubernetes platforms across AWS, Azure, and GCP —
+                        with a focus on GitOps, observability, incident response, and automation at scale.
+                    </p>
+                    <ul class="hero-chips" aria-label="Core focus areas">
+                        <li>5+ Years</li>
+                        <li>AWS / Azure / GCP</li>
+                        <li>Kubernetes</li>
+                        <li>SRE</li>
+                        <li>Platform Engineering</li>
+                        <li>Automation</li>
+                    </ul>
+                    <div class="hero-buttons">
+                        <a href="#experience" class="btn btn-primary">View Experience</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="mailto:anurag.dangi2025@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/anurag-dangi/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="tel:+919522850905" aria-label="Phone"><i class="fas fa-phone" aria-hidden="true"></i></a>
+                    </div>
                 </div>
-                <h1 class="hero-title">Hi, I'm <span class="highlight">Anurag Dangi</span></h1>
-                <h2 class="hero-subtitle">Senior DevOps Engineer</h2>
-                <div class="typing-container">
-                    <span class="typing-text">Architecting Cloud-Native Solutions</span>
-                    <span class="cursor-blink">|</span>
+                <div class="hero-visual">
+                    <div class="avatar">
+                        <img
+                            src="images/anurag-dangi.jpg"
+                            alt="Anurag Dangi, Senior DevOps and Kubernetes Platform Engineer"
+                            width="320"
+                            height="320"
+                            fetchpriority="high"
+                        >
+                    </div>
+                    <aside class="hero-panel" aria-label="Production snapshot">
+                        <p class="hero-panel-label">Production footprint</p>
+                        <dl class="hero-metrics">
+                            <div>
+                                <dt>Microservices</dt>
+                                <dd>70+</dd>
+                            </div>
+                            <div>
+                                <dt>Production pods</dt>
+                                <dd>~300</dd>
+                            </div>
+                            <div>
+                                <dt>Prod clusters</dt>
+                                <dd>5</dd>
+                            </div>
+                            <div>
+                                <dt>CI/CD pipelines</dt>
+                                <dd>40+</dd>
+                            </div>
+                        </dl>
+                        <p class="hero-panel-note">AWS EKS · Azure AKS · multi-cloud Kubernetes</p>
+                    </aside>
                 </div>
-                <p class="hero-description">
-                    Building scalable cloud-native infrastructure and automating CI/CD pipelines at scale. 
-                    Specialized in Kubernetes, Terraform, and reliability engineering.
+            </div>
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll to about"><i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title">About</h2>
+                <p class="section-lede">Production infrastructure engineering — not a generic software résumé.</p>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Senior DevOps and Site Reliability Engineer with 5+ years of experience building and operating
+                            highly available cloud-native platforms across AWS, Azure, and GCP.
+                        </p>
+                        <p>
+                            Core expertise includes Kubernetes platform engineering, Infrastructure as Code, observability,
+                            incident management, automation, DevSecOps, CI/CD, GitOps, and reliability engineering for
+                            large-scale microservices workloads.
+                        </p>
+                        <p>
+                            I focus on production platforms that are reliable, scalable, observable, secure, and operationally efficient.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="experience section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-lede">Production scale, Kubernetes platforms, reliability, and measurable delivery outcomes.</p>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Senior DevOps Engineer</h3>
+                                <span class="timeline-date">March 2025 – Present</span>
+                            </div>
+                            <h4>HiLabs India Pvt Ltd — Pune, India</h4>
+                            <div class="role-metrics" aria-label="HiLabs production metrics">
+                                <div class="role-metric">
+                                    <strong>70+</strong>
+                                    <span>Microservices</span>
+                                </div>
+                                <div class="role-metric">
+                                    <strong>~300</strong>
+                                    <span>Production pods</span>
+                                </div>
+                                <div class="role-metric">
+                                    <strong>5</strong>
+                                    <span>Production clusters</span>
+                                </div>
+                                <div class="role-metric">
+                                    <strong>40+</strong>
+                                    <span>CI/CD pipelines</span>
+                                </div>
+                                <div class="role-metric">
+                                    <strong>~60%</strong>
+                                    <span>Fewer deploy incidents</span>
+                                </div>
+                                <div class="role-metric">
+                                    <strong>~40%</strong>
+                                    <span>MTTR reduction</span>
+                                </div>
+                            </div>
+                            <ul class="timeline-list">
+                                <li>Operate multi-cloud Kubernetes platforms across AWS EKS and Azure AKS supporting 70+ microservices and approximately 300 production pods across 5 production clusters.</li>
+                                <li>Implemented GitOps with ArgoCD and Helm, reducing deployment-related incidents by approximately 60%.</li>
+                                <li>Architected scalable EKS infrastructure using ALB Ingress, Karpenter, KEDA, and service mesh technologies.</li>
+                                <li>Built 40+ standardized CI/CD pipelines covering container builds, security scanning, and automated environment promotion, reducing release cycle time by approximately 45%.</li>
+                                <li>Centralized observability with Prometheus, Grafana, and Loki — SLIs/SLOs and reliability-focused alerting contributing to approximately 40% MTTR reduction.</li>
+                            </ul>
+                            <details class="role-expand">
+                                <summary>Additional scope</summary>
+                                <ul class="timeline-list">
+                                    <li>Integrated Trivy, Snyk, and SonarQube into CI/CD pipelines for DevSecOps controls.</li>
+                                    <li>Designed GPU-enabled Kubernetes node pools for machine-learning inference workloads.</li>
+                                    <li>Implemented disaster recovery strategies aligned with RTO/RPO objectives.</li>
+                                    <li>Participated in Sev1/Sev2 production incident response, RCA, and blameless postmortems.</li>
+                                    <li>Developed Python automation for Kubernetes deployment validation and cluster health checks.</li>
+                                    <li>Created service health metrics and operational runbooks for critical workloads.</li>
+                                </ul>
+                            </details>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>DevOps Engineer</h3>
+                                <span class="timeline-date">July 2022 – March 2025</span>
+                            </div>
+                            <h4>Tata Consultancy Services — Pune, India</h4>
+                            <p class="role-intro">Enterprise delivery across hybrid Azure and AWS Kubernetes environments.</p>
+                            <div class="client-grid">
+                                <div class="client-card">
+                                    <h5>John Deere — Azure</h5>
+                                    <ul class="timeline-list">
+                                        <li>Managed enterprise workloads on Nutanix-based on-prem infrastructure, including VM lifecycle, storage, and network segmentation.</li>
+                                        <li>Enabled hybrid-cloud governance by migrating containerized workloads to Azure Arc-enabled Kubernetes.</li>
+                                        <li>Built multi-stage CI/CD across Dev, QA, UAT, and Production using Azure DevOps and Helm.</li>
+                                        <li>Supported StatefulSets, Persistent Volumes, and storage-backed Kubernetes workloads with a focus on reliability and DR readiness.</li>
+                                    </ul>
+                                </div>
+                                <div class="client-card">
+                                    <h5>Cargill — AWS</h5>
+                                    <ul class="timeline-list">
+                                        <li>Provisioned AWS EKS and GKE environments using Terraform, including VPC, subnetting, IAM, and ALB ingress.</li>
+                                        <li>Automated application delivery with Jenkins and Azure DevOps, including blue-green and rolling strategies.</li>
+                                        <li>Integrated DevSecOps and code-quality checks into CI/CD; supported AWS RDS and S3 production workloads.</li>
+                                        <li>Built Prometheus and Grafana dashboards for centralized monitoring.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Cloud Engineer – Trainee</h3>
+                                <span class="timeline-date">September 2021 – June 2022</span>
+                            </div>
+                            <h4>Concentrix India Pvt Ltd — Pune, India</h4>
+                            <ul class="timeline-list">
+                                <li>Provisioned and managed AWS EC2, S3, RDS, and VPC infrastructure.</li>
+                                <li>Implemented lifecycle policies and resource tagging for cloud cost optimization.</li>
+                                <li>Built secure VPC architectures using NAT Gateways and multi-tier security groups.</li>
+                                <li>Developed Bash-based health checks and operational automation.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platform Engineering -->
+        <div id="infrastructure" class="route-alias"></div>
+        <section id="platform" class="infrastructure section">
+            <div class="container">
+                <h2 class="section-title">Platform Engineering</h2>
+                <p class="section-lede">How I think about Kubernetes platforms — a conceptual stack of technologies I work with in production.</p>
+
+                <ol class="k8s-stack" aria-label="Kubernetes platform stack">
+                    <li class="k8s-layer">
+                        <span class="k8s-layer-name">Applications</span>
+                        <span class="k8s-layer-desc">Microservices workloads</span>
+                    </li>
+                    <li class="k8s-connector" aria-hidden="true"></li>
+                    <li class="k8s-layer k8s-layer-core">
+                        <span class="k8s-layer-name">Kubernetes</span>
+                        <span class="k8s-layer-desc">EKS · AKS · GKE</span>
+                    </li>
+                    <li class="k8s-connector" aria-hidden="true"></li>
+                    <li class="k8s-layer">
+                        <span class="k8s-layer-name">Helm / ArgoCD</span>
+                        <span class="k8s-layer-desc">Packaging &amp; GitOps</span>
+                    </li>
+                    <li class="k8s-connector" aria-hidden="true"></li>
+                    <li class="k8s-layer">
+                        <span class="k8s-layer-name">KEDA / Karpenter</span>
+                        <span class="k8s-layer-desc">Autoscaling &amp; node provisioning</span>
+                    </li>
+                    <li class="k8s-connector" aria-hidden="true"></li>
+                    <li class="k8s-layer">
+                        <span class="k8s-layer-name">Cloud Infrastructure</span>
+                        <span class="k8s-layer-desc">AWS · Azure · GCP</span>
+                    </li>
+                    <li class="k8s-connector" aria-hidden="true"></li>
+                    <li class="k8s-layer">
+                        <span class="k8s-layer-name">Prometheus / Grafana / Loki</span>
+                        <span class="k8s-layer-desc">Metrics, dashboards, logs</span>
+                    </li>
+                </ol>
+
+                <div class="infra-grid">
+                    <div class="infra-card">
+                        <div class="infra-header">
+                            <i class="fab fa-aws" aria-hidden="true"></i>
+                            <h3>AWS</h3>
+                        </div>
+                        <div class="infra-content">
+                            <div class="infra-item"><i class="fas fa-check" aria-hidden="true"></i><span>EKS</span></div>
+                            <div class="infra-item"><i class="fas fa-check" aria-hidden="true"></i><span>EC2</span></div>
+                            <div class="infra-item"><i class="fas fa-check" aria-hidden="true"></i><span>VPC</span></div>
+                            <div class="infra-item"><i class="fas fa-check" aria-hidden="true"></i><span>IAM</span></div>
+                            <div class="infra-item"><i class="fas fa-check" aria-hidden="true"></i><span>S3 · RDS</span></div>
+                            <div class="infra-item"><i class="fas fa-check" aria-hidden="true"></i><span>Route53</span></div>
+                        </div>
+                    </div>
+                    <div class="infra-card">
+                        <div class="infra-header">
+                            <i class="fab fa-microsoft" aria-hidden="true"></i>
+                            <h3>Azure</h3>
+                        </div>
+                        <div class="infra-content">
+                            <div class="infra-item"><i class="fas fa-check" aria-hidden="true"></i><span>AKS</span></div>
+                            <div class="infra-item"><i class="fas fa-check" aria-hidden="true"></i><span>Azure DevOps</span></div>
+                            <div class="infra-item"><i class="fas fa-check" aria-hidden="true"></i><span>VNet</span></div>
+                            <div class="infra-item"><i class="fas fa-check" aria-hidden="true"></i><span>Azure Monitor</span></div>
+                        </div>
+                    </div>
+                    <div class="infra-card">
+                        <div class="infra-header">
+                            <i class="fab fa-google" aria-hidden="true"></i>
+                            <h3>GCP</h3>
+                        </div>
+                        <div class="infra-content">
+                            <div class="infra-item"><i class="fas fa-check" aria-hidden="true"></i><span>GKE</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reliability / SRE -->
+        <div id="achievements" class="route-alias"></div>
+        <section id="reliability" class="achievements section">
+            <div class="container">
+                <h2 class="section-title">Reliability Engineering</h2>
+                <p class="section-lede">SRE practice beyond CI/CD — from service objectives to incident learning.</p>
+
+                <ol class="sre-flow" aria-label="SRE operating loop">
+                    <li>SLI</li>
+                    <li>SLO</li>
+                    <li>Error Budget</li>
+                    <li>Alerting</li>
+                    <li>Incident Response</li>
+                    <li>RCA</li>
+                    <li>Postmortem</li>
+                </ol>
+
+                <div class="achievements-grid reliability-grid">
+                    <article class="achievement-card">
+                        <div class="achievement-icon"><i class="fas fa-signal" aria-hidden="true"></i></div>
+                        <h3>Availability &amp; latency</h3>
+                        <p>SLIs and SLOs for service health, with alerting tied to user-facing symptoms rather than raw host noise.</p>
+                    </article>
+                    <article class="achievement-card">
+                        <div class="achievement-icon"><i class="fas fa-triangle-exclamation" aria-hidden="true"></i></div>
+                        <h3>Error rate &amp; MTTR</h3>
+                        <p>Prometheus, Grafana, and Loki for faster detection and diagnosis. Reliability alerting contributed to ~40% MTTR reduction at HiLabs.</p>
+                    </article>
+                    <article class="achievement-card">
+                        <div class="achievement-icon"><i class="fas fa-shield-halved" aria-hidden="true"></i></div>
+                        <h3>Incident response</h3>
+                        <p>Sev1/Sev2 response, RCA, and blameless postmortems — turning incidents into durable operational improvement.</p>
+                    </article>
+                    <article class="achievement-card">
+                        <div class="achievement-icon"><i class="fas fa-clock-rotate-left" aria-hidden="true"></i></div>
+                        <h3>RTO / RPO &amp; DR</h3>
+                        <p>Disaster recovery strategies aligned to recovery time and recovery point objectives for critical workloads.</p>
+                    </article>
+                    <article class="achievement-card">
+                        <div class="achievement-icon"><i class="fas fa-server" aria-hidden="true"></i></div>
+                        <h3>Capacity &amp; scale</h3>
+                        <p>Karpenter and KEDA for node and workload autoscaling; GPU node pools for ML inference when the workload requires it.</p>
+                    </article>
+                    <article class="achievement-card">
+                        <div class="achievement-icon"><i class="fas fa-book" aria-hidden="true"></i></div>
+                        <h3>Operational readiness</h3>
+                        <p>Service health metrics, cluster health automation in Python, and runbooks for critical production services.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title">Technical Expertise</h2>
+                <p class="section-lede">Organized by engineering domain — tools I use in production, not a proficiency bar chart.</p>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-icon"><i class="fas fa-cloud" aria-hidden="true"></i></div>
+                        <h3>Cloud Platforms</h3>
+                        <ul class="skill-tags">
+                            <li class="tag">AWS</li>
+                            <li class="tag">Azure</li>
+                            <li class="tag">GCP</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon"><i class="fas fa-dharmachakra" aria-hidden="true"></i></div>
+                        <h3>Kubernetes &amp; Containers</h3>
+                        <ul class="skill-tags">
+                            <li class="tag">Kubernetes</li>
+                            <li class="tag">EKS</li>
+                            <li class="tag">AKS</li>
+                            <li class="tag">GKE</li>
+                            <li class="tag">Docker</li>
+                            <li class="tag">Helm</li>
+                            <li class="tag">ArgoCD</li>
+                            <li class="tag">Karpenter</li>
+                            <li class="tag">KEDA</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon"><i class="fas fa-code" aria-hidden="true"></i></div>
+                        <h3>Infrastructure as Code</h3>
+                        <ul class="skill-tags">
+                            <li class="tag">Terraform</li>
+                            <li class="tag">CloudFormation</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon"><i class="fas fa-code-branch" aria-hidden="true"></i></div>
+                        <h3>CI/CD &amp; GitOps</h3>
+                        <ul class="skill-tags">
+                            <li class="tag">Jenkins</li>
+                            <li class="tag">Azure DevOps</li>
+                            <li class="tag">Bitbucket Pipelines</li>
+                            <li class="tag">GitOps</li>
+                            <li class="tag">ArgoCD</li>
+                            <li class="tag">GitHub</li>
+                            <li class="tag">Bitbucket</li>
+                            <li class="tag">Azure Repos</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+                        <h3>Observability</h3>
+                        <ul class="skill-tags">
+                            <li class="tag">Prometheus</li>
+                            <li class="tag">Grafana</li>
+                            <li class="tag">Loki</li>
+                            <li class="tag">ELK</li>
+                            <li class="tag">CloudWatch</li>
+                            <li class="tag">Datadog</li>
+                            <li class="tag">Azure Monitor</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon"><i class="fas fa-shield-alt" aria-hidden="true"></i></div>
+                        <h3>DevSecOps</h3>
+                        <ul class="skill-tags">
+                            <li class="tag">Trivy</li>
+                            <li class="tag">Snyk</li>
+                            <li class="tag">SonarQube</li>
+                            <li class="tag">Wiz</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon"><i class="fas fa-terminal" aria-hidden="true"></i></div>
+                        <h3>Automation</h3>
+                        <ul class="skill-tags">
+                            <li class="tag">Python</li>
+                            <li class="tag">Bash</li>
+                            <li class="tag">Linux</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-icon"><i class="fas fa-network-wired" aria-hidden="true"></i></div>
+                        <h3>Networking</h3>
+                        <ul class="skill-tags">
+                            <li class="tag">TCP/IP</li>
+                            <li class="tag">DNS</li>
+                            <li class="tag">HTTP/HTTPS</li>
+                            <li class="tag">ALB</li>
+                            <li class="tag">NLB</li>
+                            <li class="tag">VPC</li>
+                            <li class="tag">Subnetting</li>
+                            <li class="tag">NAT Gateway</li>
+                            <li class="tag">VPN</li>
+                            <li class="tag">Kubernetes Networking</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="education section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                        </div>
+                        <div class="education-content">
+                            <h3>M.Tech — Cloud Computing</h3>
+                            <h4>IIT Patna</h4>
+                            <p>CGPA: 9.10 / 10</p>
+                            <span class="education-year">July 2024 – June 2026</span>
+                        </div>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-user-graduate" aria-hidden="true"></i>
+                        </div>
+                        <div class="education-content">
+                            <h3>B.Tech — Cloud Computing</h3>
+                            <h4>RGPV Bhopal, Madhya Pradesh</h4>
+                            <p>CGPA: 7.2 / 10</p>
+                            <span class="education-year">July 2018 – June 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications" class="certifications section">
+            <div class="container">
+                <h2 class="section-title">Certifications</h2>
+                <div class="certifications-grid">
+                    <article class="cert-card">
+                        <div class="cert-icon gcp">
+                            <i class="fab fa-google" aria-hidden="true"></i>
+                        </div>
+                        <h3>Associate Cloud Engineer</h3>
+                        <p>Google Cloud</p>
+                        <span class="cert-date">April 2022</span>
+                    </article>
+                    <article class="cert-card">
+                        <div class="cert-icon azure">
+                            <i class="fab fa-microsoft" aria-hidden="true"></i>
+                        </div>
+                        <h3>AZ-900</h3>
+                        <p>Microsoft Azure Fundamentals</p>
+                        <span class="cert-date">September 2022</span>
+                    </article>
+                    <article class="cert-card">
+                        <div class="cert-icon azure">
+                            <i class="fab fa-microsoft" aria-hidden="true"></i>
+                        </div>
+                        <h3>AZ-104</h3>
+                        <p>Microsoft Azure Administrator Associate</p>
+                        <span class="cert-date">August 2023</span>
+                    </article>
+                    <article class="cert-card">
+                        <div class="cert-icon azure">
+                            <i class="fab fa-microsoft" aria-hidden="true"></i>
+                        </div>
+                        <h3>AZ-400</h3>
+                        <p>Microsoft Azure DevOps Engineer Expert</p>
+                        <span class="cert-date">April 2024</span>
+                    </article>
+                    <article class="cert-card">
+                        <div class="cert-icon aws">
+                            <i class="fab fa-aws" aria-hidden="true"></i>
+                        </div>
+                        <h3>Cloud Practitioner</h3>
+                        <p>AWS Certified</p>
+                        <span class="cert-date">August 2024</span>
+                    </article>
+                    <article class="cert-card cert-in-progress">
+                        <div class="cert-icon k8s">
+                            <i class="fas fa-dharmachakra" aria-hidden="true"></i>
+                        </div>
+                        <h3>CKA</h3>
+                        <p>Certified Kubernetes Administrator</p>
+                        <span class="cert-date">In Progress</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <p class="contact-intro">
+                    Open to conversations about senior DevOps, SRE, and Kubernetes platform roles.
+                    Based in Pune, India.
                 </p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#experience" class="btn btn-secondary">View Work</a>
-                </div>
-                <div class="social-links">
-                    <a href="mailto:anurag.dangi2025@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://linkedin.com/in/anurag-dangi" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="tel:+919522850905" aria-label="Phone"><i class="fas fa-phone"></i></a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="floating-card">
-                    <i class="fab fa-aws"></i>
-                </div>
-                <div class="floating-card">
-                    <i class="fab fa-docker"></i>
-                </div>
-                <div class="floating-card">
-                    <i class="fas fa-dharmachakra"></i>
-                </div>
-                <div class="floating-card">
-                    <i class="fab fa-jenkins"></i>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <a href="#about"><i class="fas fa-chevron-down"></i></a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        <strong>Senior DevOps Engineer</strong> at HiLabs India Pvt Ltd with <strong>4+ years of production-grade experience</strong> 
-                        architecting and managing cloud-native infrastructure at enterprise scale. IIT Patna graduate specializing in 
-                        Kubernetes orchestration, Infrastructure as Code, and reliability engineering.
-                    </p>
-                    <p>
-                        <strong>Production Expertise:</strong> Successfully configured and managed <strong>4-5 standalone Kubernetes clusters</strong> 
-                        across AWS EKS and Azure AKS, serving millions of requests daily. Architected end-to-end infrastructure for 
-                        <strong>multiple production projects</strong>, ensuring <strong>99.99% uptime</strong> and zero-downtime deployments.
-                    </p>
-                    <p>
-                        <strong>Cloud Mastery:</strong> Deep hands-on experience with <strong>AWS</strong> (EKS, EC2, S3, RDS, VPC, IAM, CloudWatch) 
-                        and <strong>Azure</strong> (AKS, VNet, Storage, Azure DevOps, Monitor). Certified Azure DevOps Engineer Expert (AZ-400) 
-                        and AWS Cloud Practitioner with proven ability to design scalable, secure, and cost-optimized cloud solutions.
-                    </p>
-                    <div class="stats">
-                        <div class="stat-item" data-target="4">
-                            <h3 class="counter">0</h3>
-                            <p>Years Production Experience</p>
+                <div class="contact-cards">
+                    <a href="mailto:anurag.dangi2025@gmail.com" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
                         </div>
-                        <div class="stat-item" data-target="5">
-                            <h3 class="counter">0</h3>
-                            <p>K8s Clusters Managed</p>
+                        <h3>Email</h3>
+                        <p>anurag.dangi2025@gmail.com</p>
+                    </a>
+                    <a href="tel:+919522850905" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
                         </div>
-                        <div class="stat-item" data-target="25">
-                            <h3 class="counter">0</h3>
-                            <p>CI/CD Pipelines Built</p>
+                        <h3>Phone</h3>
+                        <p>+91 9522850905</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/anurag-dangi/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
                         </div>
-                        <div class="stat-item" data-target="99.99">
-                            <h3 class="counter">0</h3>
-                            <p>Uptime Achieved</p>
-                        </div>
-                    </div>
+                        <h3>LinkedIn</h3>
+                        <p>linkedin.com/in/anurag-dangi</p>
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Key Achievements Section -->
-    <section id="achievements" class="achievements section">
-        <div class="container">
-            <h2 class="section-title">Key Achievements & Production Impact</h2>
-            <div class="achievements-grid">
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3>Multi-Cluster Management</h3>
-                    <p>Configured and operated <strong>4-5 production-grade Kubernetes clusters</strong> across AWS EKS and Azure AKS with advanced networking, ingress routing, and security controls</p>
-                    <div class="achievement-badge">Production Scale</div>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-project-diagram"></i>
-                    </div>
-                    <h3>Infrastructure Architecture</h3>
-                    <p>Designed and delivered <strong>end-to-end infrastructure for 4+ major projects</strong> with isolated environments (Dev, UAT, SIT, Prod) using Terraform and IaC best practices</p>
-                    <div class="achievement-badge">Enterprise Grade</div>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Reduced MTTR by 40%</h3>
-                    <p>Implemented comprehensive <strong>Prometheus + Grafana observability stack</strong> for real-time monitoring, reducing Mean Time To Recovery during production incidents</p>
-                    <div class="achievement-badge">Performance</div>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Zero-Downtime Deployments</h3>
-                    <p>Achieved <strong>99.99% uptime</strong> through automated rollback mechanisms, blue-green deployments, and comprehensive testing across 25+ production pipelines</p>
-                    <div class="achievement-badge">Reliability</div>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h3>Advanced Networking</h3>
-                    <p>Built <strong>complex ingress networking on EKS using NGINX</strong>, enabling subdomain routing, SSL/TLS termination, and multi-region traffic management</p>
-                    <div class="achievement-badge">Expert Level</div>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-users-cog"></i>
-                    </div>
-                    <h3>Automation at Scale</h3>
-                    <p>Reduced manual deployment effort by <strong>80%</strong> through comprehensive CI/CD automation with Jenkins, Azure DevOps, and Argo CD GitOps workflows</p>
-                    <div class="achievement-badge">Efficiency</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Infrastructure Overview Section -->
-    <section id="infrastructure" class="infrastructure section">
-        <div class="container">
-            <h2 class="section-title">Production Infrastructure Expertise</h2>
-            <div class="infra-grid">
-                <div class="infra-card">
-                    <div class="infra-header">
-                        <i class="fab fa-aws"></i>
-                        <h3>AWS Infrastructure</h3>
-                    </div>
-                    <div class="infra-content">
-                        <div class="infra-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>EKS Clusters with Multi-AZ High Availability</span>
-                        </div>
-                        <div class="infra-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>VPC Design with Public/Private Subnets</span>
-                        </div>
-                        <div class="infra-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>EC2 Auto Scaling & Load Balancers</span>
-                        </div>
-                        <div class="infra-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>S3, RDS, SQS, Secrets Manager</span>
-                        </div>
-                        <div class="infra-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>CloudFront CDN & Route53 DNS</span>
-                        </div>
-                        <div class="infra-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>IAM Policies & Security Groups</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="infra-card">
-                    <div class="infra-header">
-                        <i class="fab fa-microsoft"></i>
-                        <h3>Azure Infrastructure</h3>
-                    </div>
-                    <div class="infra-content">
-                        <div class="infra-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>AKS Clusters with Advanced Networking</span>
-                        </div>
-                        <div class="infra-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Virtual Networks & Subnet Configuration</span>
-                        </div>
-                        <div class="infra-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Azure VMs with Scale Sets</span>
-                        </div>
-                        <div class="infra-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Storage Accounts & Blob Storage</span>
-                        </div>
-                        <div class="infra-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Azure DevOps Pipelines</span>
-                        </div>
-                        <div class="infra-item">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Azure Monitor & Log Analytics</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tech-stack">
-                <h3>Production Technology Stack</h3>
-                <div class="tech-badges">
-                    <span class="tech-badge">Kubernetes (EKS/AKS)</span>
-                    <span class="tech-badge">Docker</span>
-                    <span class="tech-badge">Terraform</span>
-                    <span class="tech-badge">Helm Charts</span>
-                    <span class="tech-badge">Argo CD</span>
-                    <span class="tech-badge">Jenkins</span>
-                    <span class="tech-badge">Azure DevOps</span>
-                    <span class="tech-badge">Prometheus</span>
-                    <span class="tech-badge">Grafana</span>
-                    <span class="tech-badge">NGINX Ingress</span>
-                    <span class="tech-badge">Trivy</span>
-                    <span class="tech-badge">SonarQube</span>
-                    <span class="tech-badge">Python</span>
-                    <span class="tech-badge">Bash</span>
-                    <span class="tech-badge">Git</span>
-                    <span class="tech-badge">Linux</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
-                    <h3>Cloud Platforms</h3>
-                    <div class="skill-bars">
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>AWS</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" data-progress="95"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>Azure</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-icon"><i class="fas fa-dharmachakra"></i></div>
-                    <h3>Containerization & Orchestration</h3>
-                    <div class="skill-bars">
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>Kubernetes (EKS/AKS)</span>
-                                <span>92%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" data-progress="92"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>Docker</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" data-progress="95"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-icon"><i class="fas fa-code"></i></div>
-                    <h3>Infrastructure as Code</h3>
-                    <div class="skill-bars">
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>Terraform</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>CloudFormation</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-icon"><i class="fas fa-cogs"></i></div>
-                    <h3>CI/CD & Automation</h3>
-                    <div class="skill-bars">
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>Jenkins</span>
-                                <span>93%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" data-progress="93"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>Azure DevOps & Argo CD</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
-                    <h3>Monitoring & Observability</h3>
-                    <div class="skill-bars">
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>Prometheus & Grafana</span>
-                                <span>88%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" data-progress="88"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>ELK Stack</span>
-                                <span>82%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" data-progress="82"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-icon"><i class="fas fa-terminal"></i></div>
-                    <h3>Scripting & Programming</h3>
-                    <div class="skill-bars">
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>Python</span>
-                                <span>87%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" data-progress="87"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>Bash & PowerShell</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-icon"><i class="fab fa-linux"></i></div>
-                    <h3>Linux Administration</h3>
-                    <div class="skill-bars">
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>Ubuntu & Debian</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" data-progress="95"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>CentOS & RedHat</span>
-                                <span>88%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" data-progress="88"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3>DevSecOps & Security</h3>
-                    <div class="skill-bars">
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>Trivy & Snyk</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-info">
-                                <span>SonarQube</span>
-                                <span>83%</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress" data-progress="83"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience section">
-        <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="timeline">
-                <!-- Senior DevOps Engineer -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Senior DevOps Engineer</h3>
-                            <span class="timeline-date">March 2025 – Present</span>
-                        </div>
-                        <h4>Hilabs India Pvt Ltd, Pune, Maharashtra</h4>
-                        <ul class="timeline-list">
-                            <li>Architected and operated multi-region, production-grade Kubernetes clusters (EKS/AKS) with advanced ingress routing, ensuring high availability and geo-distributed resilience</li>
-                            <li>Architected and delivered end-to-end infrastructure for 4 major projects with isolated environments (Dev, UAT, SIT, Prod)</li>
-                            <li>Built complex ingress networking setup on EKS using NGINX, enabling subdomain routing</li>
-                            <li>Deployed full-stack Java, Python and Node.js applications using Docker and Helm charts to Kubernetes (EKS/AKS), managed via Argo CD workflows</li>
-                            <li>Built automated rollback and recovery mechanisms in CI/CD pipelines (Jenkins, Azure DevOps), improving deployment reliability and 99.99% service uptime</li>
-                            <li>Implemented observability stack (Prometheus + Grafana) to monitor system health and reduce MTTR by 40% during production incidents</li>
-                            <li>Created over 25+ advanced CI/CD pipelines integrating automated security scans, and blue-green/Rolling update deployment strategies using Jenkins and Azure DevOps</li>
-                            <li>Provisioned infrastructure via Terraform across AWS (EKS, EC2, S3, SQS, Secret Manager, CDN, IAM) and Azure (AKS, VNet, Storage Account, VMs)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- DevOps Engineer -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>DevOps Engineer</h3>
-                            <span class="timeline-date">July 2022 – March 2025</span>
-                        </div>
-                        <h4>Tata Consultancy Services, Pune, Maharashtra</h4>
-                        <ul class="timeline-list">
-                            <li>Owned CI/CD delivery for enterprise applications using Azure DevOps and Jenkins, Maven reducing manual efforts by 80%</li>
-                            <li>Built and maintained secure, scalable AKS/EKS environments with advanced identity, networking, and access controls</li>
-                            <li>Designed secure EKS infrastructure with VPC peering, ingress controllers, and identity management for a client</li>
-                            <li>Automated multi-stage, multi-environment deployment pipelines (Dev → QA → Pre-prod → Prod), integrating comprehensive quality and canary checks</li>
-                            <li>Automated cloud provisioning using Terraform, improving reproducibility across environments</li>
-                            <li>Integrated DevSecOps scanning tools (Trivy, SonarQube, Snyk) to enforce security and compliance in every deployment stage</li>
-                            <li>Built custom dashboards (Prometheus/Grafana) for end-to-end monitoring, reducing detection and response time for production issues</li>
-                            <li>Contributed to incident resolution and postmortems, driving reliability improvements and cross-team collaboration</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Cloud Engineer - Trainee -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Cloud Engineer - Trainee</h3>
-                            <span class="timeline-date">Sept 2021 – June 2022</span>
-                        </div>
-                        <h4>Concentrix India Pvt Ltd, Pune, Maharashtra</h4>
-                        <ul class="timeline-list">
-                            <li>Provisioned and optimized AWS resources (EC2, S3, RDS, VPC) for internal operational workloads</li>
-                            <li>Reduced cloud spends by implementing automated lifecycle policies and resource tagging</li>
-                            <li>Built secure VPC topologies with NAT Gateways, multi-tier security groups, and automated health checks via custom Bash scripts</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education section">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-grid">
-                <div class="education-card">
-                    <div class="education-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="education-content">
-                        <h3>Master of Technology in Engineering</h3>
-                        <h4>IIT Patna, Bihar</h4>
-                        <p>MTech Cloud Computing</p>
-                        <span class="education-year">Expected 2026</span>
-                    </div>
-                </div>
-                <div class="education-card">
-                    <div class="education-icon">
-                        <i class="fas fa-user-graduate"></i>
-                    </div>
-                    <div class="education-content">
-                        <h3>Bachelor of Technology in Mechanical Engineering</h3>
-                        <h4>RGPV, Bhopal</h4>
-                        <p>BTech Mechanical Engineering</p>
-                        <span class="education-year">2018 - 2022</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications section">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <div class="certifications-grid">
-                <div class="cert-card">
-                    <div class="cert-icon azure">
-                        <i class="fab fa-microsoft"></i>
-                    </div>
-                    <h3>AZ-400</h3>
-                    <p>Azure DevOps Engineer Expert</p>
-                    <span class="cert-date">April 2024</span>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon azure">
-                        <i class="fab fa-microsoft"></i>
-                    </div>
-                    <h3>AZ-104</h3>
-                    <p>Azure Administrator Associate</p>
-                    <span class="cert-date">August 2023</span>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon azure">
-                        <i class="fab fa-microsoft"></i>
-                    </div>
-                    <h3>AZ-900</h3>
-                    <p>Azure Fundamentals</p>
-                    <span class="cert-date">September 2022</span>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon aws">
-                        <i class="fab fa-aws"></i>
-                    </div>
-                    <h3>AWS CCP</h3>
-                    <p>Certified Cloud Practitioner</p>
-                    <span class="cert-date">August 2024</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-intro">
-                I'm always open to discussing new opportunities, collaborations, or just having a chat about DevOps and cloud technologies.
-            </p>
-            <div class="contact-cards">
-                <a href="mailto:anurag.dangi2025@gmail.com" class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3>Email</h3>
-                    <p>anurag.dangi2025@gmail.com</p>
-                </a>
-                <a href="tel:+919522850905" class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <h3>Phone</h3>
-                    <p>+91 9522850905</p>
-                </a>
-                <a href="https://linkedin.com/in/anurag-dangi" target="_blank" class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                    <h3>LinkedIn</h3>
-                    <p>linkedin.com/in/anurag-dangi</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Anurag Dangi. Built with passion for DevOps.</p>
+            <p>&copy; 2026 Anurag Dangi</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
